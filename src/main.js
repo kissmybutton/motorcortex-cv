@@ -1,17 +1,14 @@
-import { name, version } from '../package.json';
-import MyHTMLClip from './Incidents/HTMLClip';
+import pkg from '../package.json';
+import Cv from './Incidents/Cv';
 
 
 export default {
-  npm_name: name, // don't touch this
-  version: version, // don't touch this
+  npm_name: pkg.name, // don't touch this
+  version: pkg.version, // don't touch this
   incidents: [
     {
-      exportable: MyHTMLClip,
-      name: "MyHTMLClip",
-      // define your attributeValidationRules so MotorCortex can automatically validate them on instantiation 
-      // also so your Incidents are directly embedable to DonkeyClip
-    //   attributesValidationRules: {},
+      exportable: Cv,
+      name: "Cv",
       originalDims: {
         width: '1280px',
         height: '720px'

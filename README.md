@@ -1,38 +1,147 @@
-# motorcortex-plugin-starter
-## Purpose
-A starter plugin for creating MotorCortex plugins.
+# motorcortex-cv
 
-## Structure and Contents
-It includes:
-* rollup configuration & ready to use build tools
-* a pre-configured webpack for the needs of the demo
-* pre-configured eslint and babel
-* and a set of ready to work on, Incidents:
-    * **Effect**, for developing a custom Effect
-    * **HTMLClip**, for developing a pre-configured HTML Clip with HTML, CSS and Incidents
-    * **Combo**, for developing custom, pre-configured Combos
-    * **Clip**, for developing custom browser Clips, such as canvas
+## Installation
 
-These Incidents are the starting point for developing a plugin. They extend the right
-Classes from MotorCortex SDK and they have blank implementations of all the methods that 
-should or can be overwritten, with comments.
+```bash
+$ npm install --save @kissmybutton/motorcortex-cv
+# OR
+$ yarn add @kissmybutton/motorcortex-cv
+```
 
-Along with the comments you can always refer to <a href="https://docs.motorcortexjs.com/" target="_blank">MotorCortex documentation</a> 
-for detailed information on how to implement a plugin.
+## Importing
 
-## How to use
-Once you've decided what exactly your pluign is going to do and once we've decided on the type of Incident(s)
-you need to implement, you can start directly from the basic/blank implementations and either work on them directly
-or just copy them.
-Change the names of the files, name your Classes however you want but always make sure you import and
-expose everything properly on your main.js file.
+```javascript
+import MotorCortex from "@kissmybutton/motorcortex";
+import MCCv from "@kissmybutton/motorcortex-cv";
+```
 
-Also, it's imortant to change your package.json file so you can name your pluign, provide details and more.
+## Loading
 
-## Commands
-* `npm run build`: builds the dist of your pluign along with the demo
-* `npm run build:demo`: builds just the demo
-* `npm start`: builds everything and starts the demo
-* `npm start:demo`: just starts the demo
+```javascript
+const CvPlugin = MotorCortex.loadPlugin(MCCv);
+```
 
-## Have fun!!!
+## API
+
+The Plugin exposes one Incidents:
+
+- the video Cv
+
+### Clip
+
+```javascript
+import MotorCortex from "@kissmybutton/motorcortex";
+import CvDefinition from "@kissmybutton/motorcortex-youtube";
+const CvPlugin = MotorCortex.loadPlugin(CvDefinition);
+
+const newCvClip = new CvPlugin.Cv(
+  {
+    firstName: "Ivan",
+    lastName: "Vlachos",
+    educattion: [
+      {
+        year: "2015-2017",
+        name: "Epal Kordeliou",
+        title: "Computer Technician",
+      },
+      {
+        year: "2017-2019",
+        name: "Iek Monastiriou",
+        title: "Game Developer/Web designer",
+      },
+      { year: "2019-2020", name: "Gabishlagya", title: "Flat Desing" },
+    ],
+    skillTiming: 10000,
+    softSkillTiming: 10000,
+    educationTiming: 10000,
+    nextMoveTiming: 10000,
+    educationVideo: "./clip1.mp4",
+    skillVideo:"./clip2.mp4",
+    softSkillVideo:"./clip3.mp4",
+    nextMoveVideo:"./clip4.mp4",
+    videoSize: {
+      width: 1920,
+      height: 1080,
+    },
+    skillOverview: {
+      dataSetsTitles: ["CSS", "JS", "Python", "C#"],
+      seniority: [
+        {
+          name: "2016",
+          values: [45, 12, 60, 20],
+        },
+        {
+          name: "2017",
+          values: [24, 67, 60, 20],
+        },
+        {
+          name: "2018",
+          values: [50, 72, 60, 50],
+        },
+        {
+          name: "2019",
+          values: [66, 80, 55, 45],
+        },
+        {
+          name: "2020",
+          values: [81, 86, 60, 20],
+        },
+        {
+          name: "2021",
+          values: [92, 90, 30, 20],
+        },
+      ],
+      engagement: [
+        {
+          name: "2016",
+          values: [45, 12, 60, 20],
+        },
+        {
+          name: "2017",
+          values: [24, 67, 60, 20],
+        },
+        {
+          name: "2018",
+          values: [50, 72, 60, 50],
+        },
+        {
+          name: "2019",
+          values: [66, 80, 55, 45],
+        },
+        {
+          name: "2020",
+          values: [81, 86, 60, 20],
+        },
+        {
+          name: "2021",
+          values: [92, 90, 30, 20],
+        },
+      ],
+    },
+    softSkillOverview:{
+      adaptability:90,
+      teamwork:87,
+      communication:80,
+      problemSolving:90,
+      creativity:95,
+      leadership:70
+    },
+    links: [
+      { name: "cv link", url: "randomurl" },
+      { name: "linkedin", url: "randomurl" },
+      { name: "portofolio", url: "randomurl" },
+    ],
+  },
+  {
+    selector: "#htmlclip",
+  }
+);
+```
+
+
+Demo:[https://kissmybutton.github.io/motorcortex-cv/demo/](https://kissmybutton.github.io/motorcortex-cv/demo/)
+
+## License
+
+[MIT License](https://opensource.org/licenses/MIT)
+[![Kiss My Button](https://presskit.kissmybutton.gr/logos/kissmybutton-logo-small.png)](https://kissmybutton.gr)

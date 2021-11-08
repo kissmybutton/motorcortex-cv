@@ -1,6 +1,6 @@
 import MotorCortex from "@donkeyclip/motorcortex";
-// import Player from "@donkeyclip/motorcortex-player";
-import MyPluginDefinition from "../dist/bundle.umd.js";
+import Player from "@donkeyclip/motorcortex-player";
+import MyPluginDefinition from "../dist/motorcortex-cv.umd";
 const MyPlugin = MotorCortex.loadPlugin(MyPluginDefinition);
 
 const clip = new MotorCortex.HTMLClip({
@@ -24,11 +24,10 @@ const clip = new MotorCortex.HTMLClip({
   },
 });
 
-const newHTMLClip = new MyPlugin.MyHTMLClip(
+const newCvClip = new MyPlugin.Cv(
   {
     firstName: "Ivan",
     lastName: "Vlachos",
-    educationTime: 10000,
     educattion: [
       {
         year: "2015-2017",
@@ -44,10 +43,15 @@ const newHTMLClip = new MyPlugin.MyHTMLClip(
     ],
     skillTiming: 10000,
     softSkillTiming: 10000,
-    educationVideo: "./videotest.mp4",
+    educationTiming: 10000,
+    nextMoveTiming: 10000,
+    educationVideo: "https://github.com/kissmybutton/motorcortex-cv/demo/clip1.mp4",
+    skillVideo:"https://github.com/kissmybutton/motorcortex-cv/demo/clip2.mp4",
+    softSkillVideo:"https://github.com/kissmybutton/motorcortex-cv/demo/clip3.mp4",
+    nextMoveVideo:".https://github.com/kissmybutton/motorcortex-cv/demo/clip4.mp4",
     videoSize: {
-      width: 960,
-      height: 540,
+      width: 1920,
+      height: 1080,
     },
     skillOverview: {
       dataSetsTitles: ["CSS", "JS", "Python", "C#"],
@@ -112,7 +116,6 @@ const newHTMLClip = new MyPlugin.MyHTMLClip(
       creativity:95,
       leadership:70
     },
-    nextMoveTiming: "10000",
     links: [
       { name: "cv link", url: "randomurl" },
       { name: "linkedin", url: "randomurl" },
@@ -124,15 +127,6 @@ const newHTMLClip = new MyPlugin.MyHTMLClip(
   }
 );
 
-clip.addIncident(newHTMLClip, 0);
-document.getElementById("play").onclick = function (e) {
-  console.log("eeeeeee")
-  clip.play();
-};
-let a = 0
+clip.addIncident(newCvClip, 0);
 
-document.getElementById("vol").onclick = function (e) {
-  console.log(a++%2)
-  clip.setVolume(a++%2)
-};
-// const player = new Player({ clip, timeFormat: "ms", pointerEvents: true });
+const player = new Player({ clip, timeFormat: "ms", pointerEvents: true });
