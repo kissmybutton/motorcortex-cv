@@ -1,0 +1,98 @@
+{
+  "name": "@donkeyclip/motorcortex-cv",
+  "version": "0.0.1",
+  "description": "A plugin for creating Cv videos using MotorCortex",
+  "main": "dist/motorcortex-cv.cjs.js",
+  "module": "dist/motorcortex-cv.esm.js",
+  "browser": "dist/motorcortex-cv.umd.js",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "Your git repo here"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "concurrently": "concurrently -c \"cyan.bold,magenta.bold\" --names \"JS,Styles\"",
+    "lint:styles": "stylelint  --allow-empty-input \"src/**.css\" \"src/**/*.scss\" --config .stylelintrc.json",
+    "lint:js": "eslint -c .eslintrc src/**/*.js",
+    "lint": "npm run concurrently \"npm:lint:js\" \"npm:lint:styles\"",
+    "lint:fix": "npm run concurrently  \"npm:lint:js -- --fix\" \"npm:lint:styles -- --fix\"",
+    "build": "npm run build:lib && npm run build:demo",
+    "build:lib": "rollup -c",
+    "start": "npm run build:lib && concurrently -c \"cyan.bold,magenta.bold\" \"npm:build:lib -- -w\"  \"npm:start:demo\" ",
+    "start:demo": "webpack serve --mode=development --config ./demo/webpack.config.js",
+    "build:demo": "webpack --mode=production --config ./demo/webpack.config.js",
+    "test": "HERE GOES YOUR TEST TASK",
+    "test:prod": "npm run lint",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "motorcortex"
+  ],
+  "lint-staged": {
+    "*.{json,md,yml,yaml,css}": [
+      "prettier --write"
+    ],
+    "*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "peerDependencies": {
+    "@donkeyclip/motorcortex": "7.5.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.16.0",
+    "@babel/core": "7.16.0",
+    "@babel/plugin-syntax-jsx": "7.16.0",
+    "@babel/plugin-transform-react-jsx": "7.16.0",
+    "@babel/preset-env": "7.16.0",
+    "@donkeyclip/motorcortex": "7.5.5",
+    "@donkeyclip/motorcortex-player": "2.3.7",
+    "@rollup/plugin-babel": "5.3.0",
+    "@rollup/plugin-commonjs": "21.0.1",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "13.0.6",
+    "babel-eslint": "10.1.0",
+    "babel-loader": "8.2.3",
+    "concurrently": "6.3.0",
+    "css-loader": "6.5.1",
+    "es6-promise": "4.2.8",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-babel": "5.3.1",
+    "eslint-plugin-import": "2.25.2",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-promise": "5.1.1",
+    "eslint-plugin-standard": "5.0.0",
+    "exports-loader": "3.1.0",
+    "imports-loader": "3.1.1",
+    "npx": "10.2.2",
+    "prettier": "2.4.1",
+    "rimraf": "3.0.2",
+    "rollup": "2.59.0",
+    "rollup-plugin-terser": "7.0.2",
+    "shelljs": "0.8.4",
+    "webpack": "5.62.1",
+    "webpack-cli": "4.9.1",
+    "webpack-dev-server": "4.4.0",
+    "whatwg-fetch": "3.6.2",
+    "husky": "^7.0.0"
+  },
+  "dependencies": {
+    "@donkeyclip/motorcortex-anime": "^2.1.16",
+    "@donkeyclip/motorcortex-animetitles": "1.0.3",
+    "@donkeyclip/motorcortex-graphs": "^1.6.0",
+    "@kissmybutton/motorcortex-video": "^1.2.0"
+  }
+}
