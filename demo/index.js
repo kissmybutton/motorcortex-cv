@@ -45,10 +45,14 @@ const newCvClip = new MyPlugin.Cv(
     softSkillTiming: 10000,
     educationTiming: 10000,
     nextMoveTiming: 10000,
-    educationVideo: "https://github.com/kissmybutton/motorcortex-cv/demo/clip1.mp4",
-    skillVideo:"https://github.com/kissmybutton/motorcortex-cv/demo/clip2.mp4",
-    softSkillVideo:"https://github.com/kissmybutton/motorcortex-cv/demo/clip3.mp4",
-    nextMoveVideo:".https://github.com/kissmybutton/motorcortex-cv/demo/clip4.mp4",
+    educationVideo:
+      "https://github.com/kissmybutton/motorcortex-cv/blob/main/demo/clip1.mp4?raw=true",
+    skillVideo:
+      "https://github.com/kissmybutton/motorcortex-cv/blob/main/demo/clip2.mp4?raw=true",
+    softSkillVideo:
+      "https://github.com/kissmybutton/motorcortex-cv/blob/main/demo/clip3.mp4?raw=true",
+    nextMoveVideo:
+      "https://github.com/kissmybutton/motorcortex-cv/blob/main/demo/clip4.mp4?raw=true",
     videoSize: {
       width: 1920,
       height: 1080,
@@ -108,13 +112,13 @@ const newCvClip = new MyPlugin.Cv(
         },
       ],
     },
-    softSkillOverview:{
-      adaptability:90,
-      teamwork:87,
-      communication:80,
-      problemSolving:90,
-      creativity:95,
-      leadership:70
+    softSkillOverview: {
+      adaptability: 90,
+      teamwork: 87,
+      communication: 80,
+      problemSolving: 90,
+      creativity: 95,
+      leadership: 70,
     },
     links: [
       { name: "cv link", url: "randomurl" },
@@ -128,5 +132,4 @@ const newCvClip = new MyPlugin.Cv(
 );
 
 clip.addIncident(newCvClip, 0);
-
-const player = new Player({ clip, timeFormat: "ms", pointerEvents: true });
+new Player({ clip, timeFormat: "ms", pointerEvents: true });
