@@ -1,6 +1,6 @@
 {
   "name": "@kissmybutton/motorcortex-cv",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A plugin for creating Cv videos using MotorCortex",
   "main": "dist/motorcortex-cv.cjs.js",
   "module": "dist/motorcortex-cv.esm.js",
