@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.2](https://www.github.com/kissmybutton/motorcortex-cv/compare/v1.0.1...v1.0.2) (2021-11-25)
+
+
+### Bug Fixes
+
+* make graph dataset dynamic ([7671557](https://www.github.com/kissmybutton/motorcortex-cv/commit/7671557fd5ffa930600accbd023a7eb7029046be))
+
 ### [1.0.1](https://www.github.com/kissmybutton/motorcortex-cv/compare/v1.0.0...v1.0.1) (2021-11-19)
 
 
