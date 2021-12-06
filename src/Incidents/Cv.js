@@ -161,6 +161,7 @@ export default class Cv extends MotorCortex.HTMLClip {
   }
 
   get css() {
+    const nameLength = (this.attrs.firstName + this.attrs.lastName).length;
     return `
           .wrapper{
             background:#fff;
@@ -474,6 +475,10 @@ export default class Cv extends MotorCortex.HTMLClip {
             left: 0;
             top: 57%;
             background-color: #19f6e8; 
+          }
+
+          .dev-name{
+            font-size:${Math.floor(500 / 0.22 / nameLength)}px
           }
     
         `;
