@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.3](https://www.github.com/kissmybutton/motorcortex-cv/compare/v1.0.2...v1.0.3) (2021-12-06)
+
+
+### Bug Fixes
+
+* Fix name size and update deps ([774a4f9](https://www.github.com/kissmybutton/motorcortex-cv/commit/774a4f91b00928054dc49907cde1f4018dfc9515))
+
 ### [1.0.2](https://www.github.com/kissmybutton/motorcortex-cv/compare/v1.0.1...v1.0.2) (2021-11-25)
 
 
