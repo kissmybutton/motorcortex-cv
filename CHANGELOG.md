@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/kissmybutton/motorcortex-cv/compare/v1.0.3...v1.1.0) (2022-04-09)
+
+
+### Features
+
+* drop explorer 11 support ([832ea9e](https://github.com/kissmybutton/motorcortex-cv/commit/832ea9ed4ea87886da8bb2f1237a16a6c808135e))
+* update compatibility with motorcortex ([b905e18](https://github.com/kissmybutton/motorcortex-cv/commit/b905e1816a8ce2ee7d467d11a3da2e33ca814fd8))
+
 ### [1.0.3](https://www.github.com/kissmybutton/motorcortex-cv/compare/v1.0.2...v1.0.3) (2021-12-06)
 
 
