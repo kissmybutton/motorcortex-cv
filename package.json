@@ -47,7 +47,7 @@
     }
   },
   "peerDependencies": {
-    "@donkeyclip/motorcortex": "7.6.4"
+    "@donkeyclip/motorcortex": ">= 7.6.4 < 10"
   },
   "devDependencies": {
     "@babel/cli": "7.16.0",
