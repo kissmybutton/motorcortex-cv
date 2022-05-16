@@ -55,7 +55,7 @@
     "@babel/plugin-syntax-jsx": "7.16.0",
     "@babel/plugin-transform-react-jsx": "7.16.0",
     "@babel/preset-env": "7.16.0",
-    "@donkeyclip/motorcortex": "7.6.4",
+    "@donkeyclip/motorcortex": "7.9.3",
     "@donkeyclip/motorcortex-player": "2.3.7",
     "@rollup/plugin-babel": "5.3.1",
     "@rollup/plugin-commonjs": "21.0.1",
