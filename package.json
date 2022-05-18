@@ -91,7 +91,7 @@
   },
   "dependencies": {
     "@donkeyclip/motorcortex-anime": "^2.1.16",
-    "@donkeyclip/motorcortex-animetitles": "1.0.3",
+    "@donkeyclip/motorcortex-animetitles": "1.2.1",
     "@donkeyclip/motorcortex-graphs": "1.7.2",
     "@kissmybutton/motorcortex-video": "^1.2.0"
   }
