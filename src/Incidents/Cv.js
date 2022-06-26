@@ -1,9 +1,7 @@
-import MotorCortex, { loadPlugin } from "@donkeyclip/motorcortex";
-import AnimeDefinition from "@donkeyclip/motorcortex-anime";
+import { loadPlugin, CSSEffect, HTMLClip } from "@donkeyclip/motorcortex";
 import Graphs from "@donkeyclip/motorcortex-graphs";
 import MCVideo from "@kissmybutton/motorcortex-video";
-const VideoPlugin = MotorCortex.loadPlugin(MCVideo);
-const Anime = loadPlugin(AnimeDefinition);
+const VideoPlugin = loadPlugin(MCVideo);
 const Graph = loadPlugin(Graphs);
 
 const splitLetter = (titleText, type) => {
@@ -60,7 +58,7 @@ const linkBuilder = (links) => {
   return list;
 };
 
-export default class Cv extends MotorCortex.HTMLClip {
+export default class Cv extends HTMLClip {
   get html() {
     return `
       <div class="wrapper">
@@ -651,7 +649,7 @@ export default class Cv extends MotorCortex.HTMLClip {
 
     nextMoveVideo.addIncident(nextMovePlayback, 0);
 
-    const svgShapeOne = new Anime.Anime(
+    const svgShapeOne = new CSSEffect(
       {
         animatedAttrs: {
           strokeDashoffset: 1955,
@@ -665,7 +663,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const svgShapeTwo = new Anime.Anime(
+    const svgShapeTwo = new CSSEffect(
       {
         animatedAttrs: {
           strokeDashoffset: -789,
@@ -679,7 +677,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const devText = new Anime.Anime(
+    const devText = new CSSEffect(
       {
         animatedAttrs: {
           left: `0px`,
@@ -694,7 +692,7 @@ export default class Cv extends MotorCortex.HTMLClip {
         easing: "easeOutQuart",
       }
     );
-    const helloLetterReveal = new Anime.Anime(
+    const helloLetterReveal = new CSSEffect(
       {
         animatedAttrs: {
           top: "0%",
@@ -710,7 +708,7 @@ export default class Cv extends MotorCortex.HTMLClip {
         easing: "easeOutQuart",
       }
     );
-    const helloTextTransform = new Anime.Anime(
+    const helloTextTransform = new CSSEffect(
       {
         animatedAttrs: {
           transform: {
@@ -734,7 +732,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const helloOpacity = new Anime.Anime(
+    const helloOpacity = new CSSEffect(
       {
         animatedAttrs: {
           opacity: 1,
@@ -753,7 +751,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const helloFullName = new Anime.Anime(
+    const helloFullName = new CSSEffect(
       {
         animatedAttrs: {
           opacity: 1,
@@ -771,7 +769,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const nameLineLeft = new Anime.Anime(
+    const nameLineLeft = new CSSEffect(
       {
         animatedAttrs: {
           left: "21%",
@@ -786,7 +784,7 @@ export default class Cv extends MotorCortex.HTMLClip {
         easing: "easeOutQuart",
       }
     );
-    const nameLineWidth = new Anime.Anime(
+    const nameLineWidth = new CSSEffect(
       {
         animatedAttrs: {
           width: this.attrs.firstName.length * 80 + "px",
@@ -802,7 +800,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const redBallIn = new Anime.Anime(
+    const redBallIn = new CSSEffect(
       {
         animatedAttrs: {
           left: "82%",
@@ -820,7 +818,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const redBallLeftTransition = new Anime.Anime(
+    const redBallLeftTransition = new CSSEffect(
       {
         animatedAttrs: {
           left: "-30%",
@@ -838,7 +836,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const redBallLeftSize = new Anime.Anime(
+    const redBallLeftSize = new CSSEffect(
       {
         animatedAttrs: {
           width: "800px",
@@ -852,7 +850,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const redBallLeftSizeZero = new Anime.Anime(
+    const redBallLeftSizeZero = new CSSEffect(
       {
         animatedAttrs: {
           width: "200px",
@@ -866,7 +864,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const helloTextTransitionLeft = new Anime.Anime(
+    const helloTextTransitionLeft = new CSSEffect(
       {
         animatedAttrs: {
           left: "200%",
@@ -880,7 +878,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const devTextOut = new Anime.Anime(
+    const devTextOut = new CSSEffect(
       {
         animatedAttrs: {
           left: "-50%",
@@ -893,7 +891,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const educationTextIn = new Anime.Anime(
+    const educationTextIn = new CSSEffect(
       {
         animatedAttrs: {
           opacity: 1,
@@ -914,7 +912,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const educationTextOut = new Anime.Anime(
+    const educationTextOut = new CSSEffect(
       {
         animatedAttrs: {
           top: "-100%",
@@ -929,7 +927,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const educationTextMove = new Anime.Anime(
+    const educationTextMove = new CSSEffect(
       {
         animatedAttrs: {
           left: "0%",
@@ -944,7 +942,7 @@ export default class Cv extends MotorCortex.HTMLClip {
         selector: ".title-education-wrapper",
       }
     );
-    const videoContainerWidth = new Anime.Anime(
+    const videoContainerWidth = new CSSEffect(
       {
         animatedAttrs: {
           width: "100%",
@@ -959,7 +957,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const videoContainerHeight = new Anime.Anime(
+    const videoContainerHeight = new CSSEffect(
       {
         animatedAttrs: {
           height: "100%",
@@ -974,7 +972,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const educationWrapper = new Anime.Anime(
+    const educationWrapper = new CSSEffect(
       {
         animatedAttrs: {
           top: "0%",
@@ -989,7 +987,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const educationLtrMove = new Anime.Anime(
+    const educationLtrMove = new CSSEffect(
       {
         animatedAttrs: {
           left: "0%",
@@ -1006,7 +1004,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const educationContainerOut = new Anime.Anime(
+    const educationContainerOut = new CSSEffect(
       {
         animatedAttrs: {
           left: "-100%",
@@ -1023,7 +1021,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const videoWrapperZero = new Anime.Anime(
+    const videoWrapperZero = new CSSEffect(
       {
         animatedAttrs: {
           left: "40%",
@@ -1146,7 +1144,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const videoWrapperTransition = new Anime.Anime(
+    const videoWrapperTransition = new CSSEffect(
       {
         animatedAttrs: {
           left: "60%",
@@ -1164,7 +1162,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const videoConOneOpacity = new Anime.Anime(
+    const videoConOneOpacity = new CSSEffect(
       {
         animatedAttrs: {
           opacity: 0,
@@ -1177,7 +1175,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const transitionLeft = new Anime.Anime(
+    const transitionLeft = new CSSEffect(
       {
         animatedAttrs: {
           left: "0%",
@@ -1191,7 +1189,7 @@ export default class Cv extends MotorCortex.HTMLClip {
         selector: ".transition",
       }
     );
-    const transitionWidth = new Anime.Anime(
+    const transitionWidth = new CSSEffect(
       {
         animatedAttrs: {
           width: "0%",
@@ -1206,7 +1204,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const videoWrapperTop = new Anime.Anime(
+    const videoWrapperTop = new CSSEffect(
       {
         animatedAttrs: {
           top: "-100%",
@@ -1222,7 +1220,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const videoWrapperChangeleft = new Anime.Anime(
+    const videoWrapperChangeleft = new CSSEffect(
       {
         animatedAttrs: {
           left: "0%",
@@ -1238,7 +1236,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const videoConThreeOpacity = new Anime.Anime(
+    const videoConThreeOpacity = new CSSEffect(
       {
         animatedAttrs: {
           opacity: 0,
@@ -1251,7 +1249,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const videoWrapperBtTin = new Anime.Anime(
+    const videoWrapperBtTin = new CSSEffect(
       {
         animatedAttrs: {
           top: "0%",
@@ -1267,7 +1265,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const seniorityTextIn = new Anime.Anime(
+    const seniorityTextIn = new CSSEffect(
       {
         animatedAttrs: {
           left: "4%",
@@ -1283,7 +1281,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const svgShapeOneOut = new Anime.Anime(
+    const svgShapeOneOut = new CSSEffect(
       {
         animatedAttrs: {
           strokeDashoffset: 2240,
@@ -1297,7 +1295,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const svgShapeTwoOut = new Anime.Anime(
+    const svgShapeTwoOut = new CSSEffect(
       {
         animatedAttrs: {
           strokeDashoffset: -2240,
@@ -1311,7 +1309,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const videoConTwoOpacity = new Anime.Anime(
+    const videoConTwoOpacity = new CSSEffect(
       {
         animatedAttrs: {
           opacity: 0,
@@ -1324,7 +1322,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const seniorityTextOut = new Anime.Anime(
+    const seniorityTextOut = new CSSEffect(
       {
         animatedAttrs: {
           left: "-100%",
@@ -1340,7 +1338,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const engagementTextOut = new Anime.Anime(
+    const engagementTextOut = new CSSEffect(
       {
         animatedAttrs: {
           top: "100%",
@@ -1356,7 +1354,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const barChartBgIn = new Anime.Anime(
+    const barChartBgIn = new CSSEffect(
       {
         animatedAttrs: {
           width: "675px",
@@ -1372,7 +1370,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const softSkillTextIn = new Anime.Anime(
+    const softSkillTextIn = new CSSEffect(
       {
         animatedAttrs: {
           top: "5%",
@@ -1388,7 +1386,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const barCharLableWrapperIn = new Anime.Anime(
+    const barCharLableWrapperIn = new CSSEffect(
       {
         animatedAttrs: {
           width: "600px",
@@ -1404,7 +1402,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const barCharLablecontainerIn = new Anime.Anime(
+    const barCharLablecontainerIn = new CSSEffect(
       {
         animatedAttrs: {
           left: "4%",
@@ -1421,7 +1419,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const softSkillTextOut = new Anime.Anime(
+    const softSkillTextOut = new CSSEffect(
       {
         animatedAttrs: {
           left: "100%",
@@ -1437,7 +1435,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const barCharLablecontainerOut = new Anime.Anime(
+    const barCharLablecontainerOut = new CSSEffect(
       {
         animatedAttrs: {
           width: "0px",
@@ -1452,7 +1450,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const linkIn = new Anime.Anime(
+    const linkIn = new CSSEffect(
       {
         animatedAttrs: {
           top: "0%",
@@ -1468,7 +1466,7 @@ export default class Cv extends MotorCortex.HTMLClip {
       }
     );
 
-    const linkLine = new Anime.Anime(
+    const linkLine = new CSSEffect(
       {
         animatedAttrs: {
           width: "100%",

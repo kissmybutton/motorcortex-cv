@@ -55,7 +55,7 @@
     "@babel/plugin-syntax-jsx": "7.17.12",
     "@babel/plugin-transform-react-jsx": "7.17.12",
     "@babel/preset-env": "7.17.12",
-    "@donkeyclip/motorcortex": "7.9.3",
+    "@donkeyclip/motorcortex": "9.4.1",
     "@donkeyclip/motorcortex-player": "2.10.1",
     "@rollup/plugin-babel": "5.3.1",
     "@rollup/plugin-commonjs": "21.1.0",
@@ -84,15 +84,13 @@
     "rollup-plugin-terser": "7.0.2",
     "shelljs": "0.8.5",
     "webpack": "5.72.1",
-    "webpack-cli": "4.9.2",
+    "webpack-cli": "4.10.0",
     "webpack-dev-server": "4.9.0",
     "whatwg-fetch": "3.6.2",
     "husky": "7.0.4"
   },
   "dependencies": {
-    "@donkeyclip/motorcortex-anime": "^2.1.16",
-    "@donkeyclip/motorcortex-animetitles": "1.0.3",
-    "@donkeyclip/motorcortex-graphs": "1.7.2",
-    "@kissmybutton/motorcortex-video": "^1.2.0"
+    "@donkeyclip/motorcortex-graphs": "2.2.1",
+    "@kissmybutton/motorcortex-video": "^2.2.2"
   }
 }
