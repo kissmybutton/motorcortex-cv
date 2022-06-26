@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.1.1](https://github.com/kissmybutton/motorcortex-cv/compare/v1.1.0...v1.1.1) (2022-06-26)
+
+
+### Bug Fixes
+
+* import only effect instead of full MC and remove anime ([4d5fe11](https://github.com/kissmybutton/motorcortex-cv/commit/4d5fe111807d4fc34469a6e19c0250aed9c2396c))
+
 ## [1.1.0](https://github.com/kissmybutton/motorcortex-cv/compare/v1.0.3...v1.1.0) (2022-04-09)
 
 
