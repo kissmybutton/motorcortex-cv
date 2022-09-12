@@ -572,7 +572,7 @@ export default class Cv extends HTMLClip {
         sources: [this.attrs.educationVideo],
         ...this.attrs.videoSize,
         startFrom: 0,
-        audio: false,
+        audio: true,
       },
       {
         selector: ".video-container-1",
@@ -593,7 +593,7 @@ export default class Cv extends HTMLClip {
         sources: [this.attrs.skillVideo],
         ...this.attrs.videoSize,
         startFrom: 0,
-        audio: false,
+        audio: true,
       },
       {
         selector: ".video-container-2",
@@ -614,7 +614,7 @@ export default class Cv extends HTMLClip {
         sources: [this.attrs.softSkillVideo],
         ...this.attrs.videoSize,
         startFrom: 0,
-        audio: false,
+        audio: true,
       },
       {
         selector: ".video-container-3",
@@ -635,7 +635,7 @@ export default class Cv extends HTMLClip {
         sources: [this.attrs.nextMoveVideo],
         ...this.attrs.videoSize,
         startFrom: 0,
-        audio: false,
+        audio: true,
       },
       {
         selector: ".video-container-4",
