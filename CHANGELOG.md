@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/kissmybutton/motorcortex-cv/compare/v1.1.1...v1.1.2) (2022-09-12)
+
+
+### Bug Fixes
+
+* enable sound in videos ([ba301e7](https://github.com/kissmybutton/motorcortex-cv/commit/ba301e7f67d51eaa8998d9f48c1de2b2aaed6f45))
+
 ### [1.1.1](https://github.com/kissmybutton/motorcortex-cv/compare/v1.1.0...v1.1.1) (2022-06-26)
 
 
