@@ -132,4 +132,4 @@ const newCvClip = new MyPlugin.Cv(
 );
 
 clip.addIncident(newCvClip, 0);
-new Player({ clip, timeFormat: "ms", pointerEvents: true });
+new Player({ clip, timeFormat: "ms"});
