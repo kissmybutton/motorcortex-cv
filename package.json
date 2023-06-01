@@ -90,7 +90,7 @@
     "husky": "7.0.4"
   },
   "dependencies": {
-    "@donkeyclip/motorcortex-graphs": "2.2.1",
+    "@donkeyclip/motorcortex-graphs": "2.2.2",
     "@kissmybutton/motorcortex-video": "^2.2.2"
   }
 }
