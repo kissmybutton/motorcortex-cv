@@ -78,7 +78,7 @@
     "exports-loader": "3.1.0",
     "imports-loader": "3.1.1",
     "npx": "10.2.2",
-    "prettier": "2.7.1",
+    "prettier": "2.8.8",
     "rimraf": "3.0.2",
     "rollup": "2.79.1",
     "rollup-plugin-terser": "7.0.2",
