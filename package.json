@@ -87,7 +87,7 @@
     "webpack-cli": "4.10.0",
     "webpack-dev-server": "4.15.1",
     "whatwg-fetch": "3.6.20",
-    "husky": "7.0.4"
+    "husky": "8.0.3"
   },
   "dependencies": {
     "@donkeyclip/motorcortex-graphs": "2.2.2",
