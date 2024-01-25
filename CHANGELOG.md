@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.3](https://github.com/kissmybutton/motorcortex-cv/compare/v1.1.2...v1.1.3) (2024-01-25)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @donkeyclip/motorcortex-graphs to v2.2.2 ([a20a9c0](https://github.com/kissmybutton/motorcortex-cv/commit/a20a9c066f8709b3235d49c57f8b63cbe331a4e6))
+
 ## [1.1.2](https://github.com/kissmybutton/motorcortex-cv/compare/v1.1.1...v1.1.2) (2022-09-12)
 
 
